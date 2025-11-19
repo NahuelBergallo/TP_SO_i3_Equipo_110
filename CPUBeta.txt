@@ -1,0 +1,71 @@
+C:\Users\Nahuel>systeminfo
+
+Nombre de host:                            DESKTOP-FPP0LCO
+Nombre del sistema operativo:              Microsoft Windows 11 Pro
+Versión del sistema operativo:             10.0.26100 N/D Compilación 26100
+Fabricante del sistema operativo:          Microsoft Corporation
+Configuración del sistema operativo:       Estación de trabajo independiente
+Tipo de compilación del sistema operativo: Multiprocessor Free
+Propietario registrado:                    Nahuel
+Organización registrada:
+Id. del producto:                          00331-10000-00001-AA734
+Fecha de instalación original:             18/7/2025, 10:01:29
+Tiempo de arranque del sistema:            19/11/2025, 08:25:15
+Fabricante del sistema:                    ASUS
+Modelo del sistema:                        System Product Name
+Tipo de sistema:                           x64-based PC
+Procesadores:                              1 Procesadores instalados.
+                                           [01]: Intel64 Family 6 Model 165 Stepping 3 GenuineIntel ~2904 Mhz
+Versión del BIOS:                          American Megatrends Inc. 0824, 6/5/2021
+Directorio de Windows:                     C:\WINDOWS
+Directorio de sistema:                     C:\WINDOWS\system32
+Dispositivo de arranque:                   \Device\HarddiskVolume1
+Configuración regional del sistema:        es;Español (internacional)
+Idioma de entrada:                         es-mx;Español (México)
+Zona horaria:                              (UTC-03:00) Ciudad de Buenos Aires
+Memoria física total:                      16.236 MB
+Memoria física disponible:                 7.288 MB
+Memoria virtual: tamaño máximo:            22.636 MB
+Memoria virtual: disponible:               10.195 MB
+Memoria virtual: en uso:                   12.441 MB
+Ubicaciones de archivos de página:         D:\pagefile.sys
+Dominio:                                   WORKGROUP
+Servidor de inicio de sesión:              \\DESKTOP-FPP0LCO
+Revisiones:                                3 revisión(es) instaladas.
+                                           [01]: KB5066131
+                                           [02]: KB5068861
+                                           [03]: KB5067035
+Tarjetas de red:                           3 Tarjetas de interfaz de red instaladas.
+                                           [01]: Intel(R) Ethernet Connection (14) I219-V
+                                                 Nombre de conexión: Ethernet
+                                                 Estado:             Medios desconectados
+                                           [02]: Realtek PCIe GbE Family Controller
+                                                 Nombre de conexión: Ethernet 2
+                                                 DHCP habilitado:    Sí
+                                                 Servidor DHCP:      192.168.100.1
+                                                 Direcciones IP
+                                                 [01]: 192.168.100.83
+                                                 [02]: fe80::dddd:60b9:3c79:fef6
+                                                 [03]: 2803:9800:b015:83d4:c898:d5df:88af:1bcd
+                                                 [04]: 2803:9800:b015:83d4:e835:591b:e668:23a7
+                                           [03]: VirtualBox Host-Only Ethernet Adapter
+                                                 Nombre de conexión: Ethernet 3
+                                                 DHCP habilitado:    No
+                                                 Direcciones IP
+                                                 [01]: 192.168.56.1
+                                                 [02]: fe80::6173:9b63:49b1:c6c7
+Seguridad basada en virtualización:        Estado: En ejecución
+                                           Propiedades de seguridad requeridas:
+                                           Propiedades de seguridad disponibles:
+                                                 Compatibilidad con la virtualización base
+                                                 Protección de DMA
+                                                 Código UEFI de solo lectura
+                                                 SMM Security Mitigations 1.0
+                                                 Control de ejecución basado en el modo
+                                                 Virtualización de APIC
+                                           Services Configured:
+                                           Services Running:
+                                           App Control for Business policy: Forzado
+                                           App Control for Business user mode policy: Desactivado
+                                           Características de seguridad habilitadas:
+Requisitos Hyper-V:                        Se detectó un hipervisor. No se mostrarán las características necesarias para Hyper-V.
