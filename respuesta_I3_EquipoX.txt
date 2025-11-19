@@ -1,0 +1,217 @@
+Responde BETA:
+a-¿Cómo queda el máster después de estos cambios?
+Queda con los cambios realizados por todos los usuarios 
+
+b-¿Beta pudo ver todos los cambios que se realizaron?
+Si pudo verlos mientras se hicieron
+c-¿que debió hacer (todos los comandos) en el punto 5 para poder hacer el merge ? 
+git fetch
+git checkout -b gamma origin/gamma
+git checkout main
+git merge gamma
+git push 
+hubo varios erres no forzados ya que al faltarnos un miembro costo hacerlo
+Responde GAMMA:
+d-¿Las ramas creadas por BETA y GAMMA quedan con datos actualizados?
+Si quedaron actualizados 
+e-¿Detalle (explique) los problemas que tuvieron al hacer el merge?
+Principalmente el que no pudos hacer el merge porque nos olvidamos de cargar datos.txt
+f-¿que debió hacer (todos los comandos) en el punto 7 para poder hacer lo pedido?
+Responde ALFA:
+G-¿que debió hacer(todos los comandos) en el punto 8 para poder hacer lo pedido?
+
+g y f 
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (gamma)
+$ ls
+CPUBeta.txt  CPUGamma.txt  README.md  beta.txt  datos.txt
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (gamma)
+$ git checkout beta
+error: pathspec 'beta' did not match any file(s) known to git
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (gamma)
+$ git checkout -b beta
+Switched to a new branch 'beta'
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (beta)
+$ ls
+CPUBeta.txt  CPUGamma.txt  README.md  beta.txt  datos.txt
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (beta)
+$ git add beta.txt
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (beta)
+$ git commit -, "Aagrego"
+error: unknown switch `,'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>)]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (beta)
+$ git commit -m "Aagrego"
+[beta 855af83] Aagrego
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 beta.txt
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (beta)
+$ git push -u origin beta
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 921 bytes | 921.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NahuelBergallo/TP_SO_i3_Equipo_110.git
+   ba9473b..855af83  beta -> beta
+branch 'beta' set up to track 'origin/beta'.
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (beta)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 3), reused 5 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (6/6), 1.27 KiB | 51.00 KiB/s, done.
+From https://github.com/NahuelBergallo/TP_SO_i3_Equipo_110
+   f3908ad..ba9473b  main       -> origin/main
+ * [new branch]      Argañaraz -> origin/Argañaraz
+Updating f3908ad..ba9473b
+Fast-forward
+ CPUBeta.txt | 71 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ datos.txt   |  6 +++++-
+ 2 files changed, 76 insertions(+), 1 deletion(-)
+ create mode 100644 CPUBeta.txt
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git merge beta
+Updating ba9473b..855af83
+Fast-forward
+ beta.txt | Bin 0 -> 4822 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 beta.txt
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NahuelBergallo/TP_SO_i3_Equipo_110.git
+   ba9473b..855af83  main -> main
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git checkout -b beta
+fatal: a branch named 'beta' already exists
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git branch
+  beta
+  gamma
+* main
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git branch -a
+  beta
+  gamma
+* main
+  remotes/origin/Argañaraz
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/beta
+  remotes/origin/gamma
+  remotes/origin/main
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git branch
+  beta
+  gamma
+* main
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git branch -a
+  beta
+  gamma
+* main
+  remotes/origin/Argañaraz
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/beta
+  remotes/origin/gamma
+  remotes/origin/main
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git pull
+Already up to date.
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git merge beta
+Already up to date.
+
+Nahuel@DESKTOP-FPP0LCO MINGW64 /e/Nueva carpeta (3)/TP_SO_i3_Equipo_110 (main)
+$ git push
+Everything up-to-date
+
+
+son algunos de los comandos 
